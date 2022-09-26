@@ -92,7 +92,6 @@
                echo("- các môn đã thi đấu : ");
                foreach( $this->cac_mon_da_thi_dau as $key => $mon)
                {
-                   echo $mon . "<br>" ;
                    echo " - $mon  " ;
                } ;
            }
