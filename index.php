@@ -93,6 +93,7 @@
                foreach( $this->cac_mon_da_thi_dau as $key => $mon)
                {
                    echo $mon . "<br>" ;
+                   echo " - $mon  " ;
                } ;
            }
 
@@ -129,11 +130,14 @@
        }
 
 
-       $monthidau = new MonThiDau("võ",170,53);
+       $mon_vo = new MonThiDau("võ",170,50);
+
+       $mon_boi = new MonThiDau("bơi",170,50);
 
        $NguyenVanA = new VanDongVien("nguyễn Văn A",22,0,"10-9-2001",51,172,3);
 
-       $NguyenVanA->ThiDau($monthidau , 1) ;
+       $NguyenVanA->ThiDau($mon_vo , 1) ;
+       $NguyenVanA->ThiDau($mon_boi , 1) ;
 
        $NguyenVanA->HienThiThongTin();
 
